@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Fellix;
+    src: url(../font/Fellix-Regular.woff2);
+}
+
+@font-face {
+    font-family: FellixBold;
+    src: url(../font/Fellix-Bold.woff2);
+}
+
+* {
+    font-family: 'Fellix';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+}
+
+.wrapper {
+    flex-direction: column;
+    width: 70%;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 9vh;
+    background-color: #014c35;
+}
+
+.top .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5vh 0;
+    background-color: #56ddf0;
+}
+
+ul {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+ul a {
+    font-family: 'FellixBold';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #014c35;
+    text-decoration: none;
+    filter: brightness(1);
+    transition: ease-out 0.25s;
+}
+
+ul a:hover {
+    transition: ease-in 0.25s;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 450px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px black;
+    background-color: rgba(1, 76, 53, 0.75);
+}
+
+.sidebar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.sidebar ul li {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 2vh 0;
+}
+
+.sidebar ul li:first-child {
+    height: 9vh;
+    color: #56ddf0;
+    filter: brightness(1);
+    transition: ease-out 0.25s;
+}
+
+.sidebar ul li a {
+    color: #56ddf0;
+    filter: brightness(1);
+    transition: ease-out 0.25s;
+}
+
+.sidebar ul li a:hover {
+    transition: ease-in 0.25s;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.top .wrapper svg {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        background-color: #014c35 !important;
+    }
+}
+
+.homeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.homeDiv .wrapper {
+    display: flex;
+}
+
+.homeDiv h1 {
+    font-family: 'FellixBold';
+    margin-top: 13vh;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media(max-width: 400px) {
+    .homeDiv .wrapper {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .homeDiv h1 {
+        font-size: 2rem;
+    }
+
+}
+
+#blokken {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #014c35;
+}
+
+#blokken .container {
+    background-color: red;
+    height: 100%;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'FellixBold';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.colorGreen {
+    color: #014c35;
+    font-family: 'FellixBold';
+}
+
+.boldText {
+    font-size: 1.5rem;
+    font-family: 'FellixBold';
+}
+
+.right {
+    margin-top: 3vh;
+    text-align: right;
+}
+
+.image {
+    width: 55%;
+    border-radius: 5vh;
+    box-shadow: 5px 5px 15px black;
+}
+
+@media(max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .bottom nav {
+        display: none;
+    }
+
+    .top .wrapper svg {
+        display: block;
+    }
+
+    .image {
+        display: none;
+    }
+
+    #home {
+        background: url(../img/Sanne\ Bas\ -\ Curio\ -\ Terheijdenseweg\ 350-2.jpg) no-repeat center center/cover;
+    }
+
+    .homeDiv {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:rounded-bl-3xl {
+        border-top-left-radius: 1.5rem !important;
+    }
+}
+
+.developer.animate {
+    opacity: 0;
+    top: 0% !important;
+    right: 50%;
+    transform: translate(0%, -50%) !important;
+    animation: move 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
