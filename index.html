@@ -2,69 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curio - Opendag</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <section id="home">
         <header>
-            <div class="top">
-                <div class="wrapper">
-                    <div>
-                        <a href="#home">
-                            <img class="logo B" src="img/curio-12-licht-blauw-logo-rgb.png" alt="Curio">
-                            <img class="logo Y" src="img/curio-03-geel-logo-rgb.png" alt="Curio" style="display: none;"> 
-                        </a>
-                    </div>
-                    <svg class="menu-button" onclick=showSidebar() xmlns="http://www.w3.org/2000/svg" fill="#56ddf0" height="45" viewBox="0 -960 960 960" width="45"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <div class="topHeader">
+                <div class="wrapper header">
+                    <img src="img/Logos/curio-13-midden-blauw-logo-rgb.png" alt="">
                 </div>
             </div>
-            <div class="bottom C">
+            <div class="bottomHeader">
                 <div class="wrapper">
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="">Blokken / Versnellen</a></li>
-                            <li><a href="">Vakken</a></li>
-                            <li><a href="">Rooster</a></li>
-                            <li><a href="">Docenten</a></li>
-                        </ul>
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#blokken">Blokken / Versnellen</a>
+                        <a href="#vakken">Vakken</a>
+                        <a href="#rooster">Rooster</a>
+                        <a href="#docenten">Docenten</a>
                     </nav>
                 </div>
             </div>
-            <nav class="sidebar">
-                <ul class="A">
-                    <li onclick=hideSidebar()><a href="#"><svg class="close-button F" xmlns="http://www.w3.org/2000/svg" fill="#56ddf0" height="45" viewBox="0 -960 960 960" width="45"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="">Blokken / Versnellen</a></li>
-                    <li><a href="">Vakken</a></li>
-                    <li><a href="">Rooster</a></li>
-                    <li><a href="">Docenten</a></li>
-                </ul>
-            </nav>
         </header>
-        <div class="homeDiv">
-            <div class="wrapper">
-                <div>
-                    <h1 id="welcome-message"></h1>
-                    <p><b class="boldText">Welkom bij Curio - Software Development!</b><br>Op deze opleiding leer je alles over verschillende programmeertalen en technieken!<br>Je leert om programma's te schrijven in Python, C#!<br>Ook leer je om websites in elkaar te zetten met HTML, CSS, PHP en Javascript!</p>
-                </div>
-                <div class="right">
-                    <img class="image" src="img/Sanne Bas - Curio - Terheijdenseweg 350-2.jpg" alt="Curio Terheijdenseweg 350">
+        <div class="homeBG">
+            <div class="wrapper box">
+                <div class="info">
+                    <div class="infoBox">
+                        <div>
+                            <h1>Software Developer</h1>
+                            <img src="img/Logos/curio-12-licht-blauw-logo-rgb.png" alt="">
+                        </div>
+                        <div>
+                            <b class="mediumText">Welkom bij Curio - Software Development! Op deze opleiding leer je alles over verschillende programmeertalen en technieken!<br>Je leert om programma's te schrijven in Python, C#, Java en nog meer talen!<br>Ook leer je om websites in elkaar te zetten met HTML, CSS, PHP, Javascript en Laravel!</b>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="blokken">
-        <div class="wrapper">
-            <div class="container">
-                <h2>Blokken / Versnellen</h2>
-                <p><b>Mogelijkheden van 4 jaar naar 3 jaar!</b><br/>Versnellings traject<br/>Met een versnellingstraject kun je de opleiding in 3 jaar in plaats van 4 jaar voltooien, gebaseerd op prestaties tijdens praktijkopdrachten en toetsmomenten. De beslissing wordt genomen door leraren en jou zelf in februari van je eerste jaar. Bij deze optie krijg je 1 extra vak en meer wekelijkse uren.</p>
-                <img class="image" src="img/Overzicht-Breda.png" alt="Versnellen">
+        <div class="blokken purple">
+            <div class="wrapper">
+                <div class="blok">
+                    <div class="infoBlok">
+                        <h2>Mogelijkheden van 4 jaar naar 3 jaar!</h2>
+                        <p class="mediumText"><b>Versnellings traject</b></p>
+                        <p class="smallText">Met een versnellingstraject kun je de opleiding in 3 jaar in plaats van 4 jaar voltooien, gebaseerd op prestaties tijdens praktijkopdrachten en toetsmomenten. De beslissing wordt genomen door leraren en jouzelf in februari van je eerste jaar. Bij deze optie krijg je 1 extra vak en meer wekelijkse uren.</p>
+                        <img src="img/Opleidingsoverzicht3.png" alt="" width="600px">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <section id="vakken">
+        <div class="wrapper">
+            <h3>Vakken</h3>
+            <div class="vakken">
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Native</b>
+                        <p>Programmeren voor Windows, met gebruik van talen zoals Python en C#.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Web</b>
+                        <p>Programmeren voor websites, met talen zoals HTML, CSS, PHP, Javascript.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Pro</b>
+                        <p>Ondersteuning voor de praktijk. Hierbij leer je onder andere de werkwijzes.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Pra</b>
+                        <p>Praktijk. Oftewel, opdrachten over de geleerde lesstof realiseren.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>SLB</b>
+                        <p>Mentoruur. Hierbij bespreekt je mentor belangrijke zaken met je.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Rekenen</b>
+                        <p>Ook rekenen behoord tot het lespakket. Ook dit vak is nog steeds erg belangrijk.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Engels</b>
+                        <p>Ook Engels zul je krijgen. Het beheersen van deze taal is namelijk belangrijk.</p>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Nederlands</b>
+                        <p>Natuurlijk krijg je ook nog steeds Nederlands. Dit is ook nog steeds belangrijk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rooster">
+        <div class="wrapper">
+            <h3>Rooster</h3>
+            <b>Het rooster van een eerstejaars verschilt per klas, maar doorgaans bestaat het lesrooster uit ongeveer 22 lesuren per week.</b>
+            <img src="img/rooster.png" alt="">
+        </div>
+    </section>
+    <section id="docenten">
+        <div class="wrapper">
+            <h3>Docenten</h3>
+            <div class="vakken">
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Kitty Martens</b>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Bart Roos</b>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Marc Ridders</b>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Wiro Verdiesen</b>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Tineke van Loon</b>
+                    </div>
+                </div>
+                <div class="vak">
+                    <div class="vakInfo">
+                        <b>Joost Ambagts</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© Curio</p>
+    </footer>
 </body>
 </html>
